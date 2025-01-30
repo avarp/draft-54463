@@ -1,0 +1,28 @@
+{
+  "name": "reactive",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "targets": {
+    "main": {
+      "context": "browser",
+      "outputFormat": "esmodule",
+      "optimize": false
+    }
+  },
+  "source": "src/index.js",
+  "main": "public/lib.min.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "rm -rf ./.parcel-cache && parcel build"
+  },
+  "author": "avarp",
+  "license": "ISC",
+  "dependencies": {
+    "finalhandler": "^1.2.0",
+    "serve-static": "^1.15.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.13.3"
+  }
+}
